@@ -28,8 +28,8 @@ function App() {
 
    useEffect(() => {
       const stealMyKey = "68eccd36babd51af6beed5dd5a4255c8";
-      const currentWeatherAPI = `http://api.openweathermap.org/data/2.5/weather?zip=${zip}&units=imperial&appid=${stealMyKey}`;
-      const fiveDayWeatherAPI = `http://api.openweathermap.org/data/2.5/forecast?zip=${zip}&units=imperial&appid=${stealMyKey}`;
+      const currentWeatherAPI = `https://api.openweathermap.org/data/2.5/weather?zip=${zip}&units=imperial&appid=${stealMyKey}`;
+      const fiveDayWeatherAPI = `https://api.openweathermap.org/data/2.5/forecast?zip=${zip}&units=imperial&appid=${stealMyKey}`;
 
       const fetchTodaysWeather = async () => {
          const result = await axios(currentWeatherAPI);
